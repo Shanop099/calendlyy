@@ -12,7 +12,7 @@ import publicRouter from './routes/public';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.3001 || PORT;
+const PORT = parseInt(process.env.PORT || '3001', 10);
 
 /**
  * FRONTEND URLs (for CORS)
